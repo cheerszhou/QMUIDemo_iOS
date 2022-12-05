@@ -23,7 +23,7 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     if (self = [super initWithStyle:style]) {
         self.dataSource = [[QMUIOrderedDictionary alloc] initWithKeysAndObjects:
                                          kSectionTitleForNormal, [[QMUIOrderedDictionary alloc] initWithKeysAndObjects:
-                                                                  @"普通弹窗", @"",
+                                                                  @"普通弹窗", @"",@"特定项目测试",@"zxx的dialog",
                                                                   @"支持自定义样式", @"可通过 appearance 方式来统一修改全局样式",
                                                                   nil],
                                          kSectionTitleForSelection, [[QMUIOrderedDictionary alloc] initWithKeysAndObjects:
@@ -54,6 +54,11 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     
     if ([title isEqualToString:@"支持自定义样式"]) {
         [self showAppearanceDialogViewController];
+        return;
+    }
+    
+    if ([title isEqualToString:@"特定项目测试"]) {
+        [self showNormalDialogForSpecialUse];
         return;
     }
     
@@ -103,6 +108,43 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     [label sizeToFit];
     label.center = CGPointMake(CGRectGetWidth(contentView.bounds) / 2.0, CGRectGetHeight(contentView.bounds) / 2.0);
     [contentView addSubview:label];
+    dialogViewController.contentView = contentView;
+    [dialogViewController addCancelButtonWithText:@"取消" block:nil];
+    [dialogViewController addSubmitButtonWithText:@"确定" block:^(QMUIDialogViewController *aDialogViewController) {
+        [aDialogViewController hide];
+    }];
+    [dialogViewController show];
+}
+
+- (void)showNormalDialogForSpecialUse {
+    QMUIDialogViewController *dialogViewController = [[QMUIDialogViewController alloc] init];
+    dialogViewController.title = @"设置分红金额";
+    
+    // 自定义View - by zxx
+    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    contentView.backgroundColor = UIColorWhite;
+
+    
+    UIView* bonus_container = [UIView new];
+    [contentView addSubview:bonus_container];
+    
+    UILabel *bonus_found_label = [[UILabel alloc] qmui_initWithFont:UIFontMake(14) textColor:UIColorBlack];
+    bonus_found_label.text = @"*分红总金额:";
+    bonus_found_label.font = [UIFont systemFontOfSize:11];
+    bonus_found_label.textColor = [UIColor qmui_colorWithHexString:@"#666666"];
+    bonus_found_label.center = CGPointMake(CGRectGetWidth(contentView.bounds) / 2.0, CGRectGetHeight(contentView.bounds) / 2.0);
+    [bonus_container addSubview:bonus_found_label];
+    
+    QMUITextField* bonus_found_textfield = [[QMUITextField alloc]init];
+    bonus_found_textfield.placeholder = @"50-50000";
+    bonus_found_textfield.keyboardType = UIKeyboardTypeDecimalPad;
+    bonus_found_textfield.font = [UIFont systemFontOfSize:11];
+    bonus_found_textfield.textColor = [UIColor qmui_colorWithHexString:@"#666666"];
+    [bonus_container addSubview:bonus_found_textfield];
+    
+    
+    
+    
     dialogViewController.contentView = contentView;
     [dialogViewController addCancelButtonWithText:@"取消" block:nil];
     [dialogViewController addSubmitButtonWithText:@"确定" block:^(QMUIDialogViewController *aDialogViewController) {

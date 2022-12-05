@@ -71,6 +71,19 @@
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithImage:UIImageMake(@"icon_nav_about") target:self action:@selector(handleAboutItemEvent)];
     AddAccessibilityLabel(self.navigationItem.rightBarButtonItem, @"打开关于界面");
 }
+// 特定项目调试 - by zxx
+- (void)addCustomViewBtnItem {
+    UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightButton.layer.cornerRadius = 6;
+    rightButton.layer.masksToBounds = YES;
+    rightButton.backgroundColor = [UIColor qmui_colorWithHexString:@"#00cd6c"];
+    rightButton.qmui_size = CGSizeMake(76, 30);
+    [rightButton setTitle:@"添加分红" forState:UIControlStateNormal];
+    [rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    rightButton.titleLabel.font = [UIFont systemFontOfSize:16];
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
 
 - (void)didSelectCellWithTitle:(NSString *)title {
     UIViewController *viewController = nil;
