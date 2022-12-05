@@ -1,0 +1,6 @@
+framework module Pods_QMUIKeyboard {
+  umbrella header "Pods-QMUIKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

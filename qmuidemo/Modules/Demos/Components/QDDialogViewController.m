@@ -120,14 +120,24 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
 - (void)showNormalDialogForSpecialUse {
     QMUIDialogViewController *dialogViewController = [[QMUIDialogViewController alloc] init];
     dialogViewController.title = @"设置分红金额";
+    dialogViewController.titleLabelFont = [UIFont systemFontOfSize:18];
+    dialogViewController.titleTintColor = [UIColor qmui_colorWithHexString:@"#323232"];
+    dialogViewController.headerSeparatorColor = [UIColor clearColor];
+    dialogViewController.headerViewBackgroundColor = [UIColor clearColor];
     
     // 自定义View - by zxx
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 66)];
     contentView.backgroundColor = UIColorWhite;
 
     
     UIView* bonus_container = [UIView new];
     [contentView addSubview:bonus_container];
+    [bonus_container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(200);
+        make.height.mas_equalTo(20);
+        make.top.mas_equalTo(10);
+        make.centerX.equalTo(contentView);
+    }];
     
     UILabel *bonus_found_label = [[UILabel alloc] qmui_initWithFont:UIFontMake(14) textColor:UIColorBlack];
     bonus_found_label.text = @"*分红总金额:";
@@ -137,24 +147,31 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     [bonus_container addSubview:bonus_found_label];
     [bonus_found_label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.left.top.equalTo(bonus_container);
+        make.width.mas_equalTo(78);
     }];
     
     QMUITextField* bonus_found_textfield = [[QMUITextField alloc]init];
     bonus_found_textfield.placeholder = @"50-50000";
     bonus_found_textfield.keyboardType = UIKeyboardTypeDecimalPad;
-    bonus_found_textfield.font = [UIFont systemFontOfSize:11];
+    bonus_found_textfield.font = [UIFont systemFontOfSize:15];
     bonus_found_textfield.textColor = [UIColor qmui_colorWithHexString:@"#666666"];
+    bonus_found_textfield.qmui_borderPosition = QMUIViewBorderPositionBottom;
     [bonus_container addSubview:bonus_found_textfield];
     [bonus_found_textfield mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.top.right.equalTo(bonus_container);
+        make.height.top.equalTo(bonus_container);
+        make.left.equalTo(bonus_found_label.mas_right);
     }];
     
-    [bonus_container mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(180);
-        make.height.mas_equalTo(20);
-        make.top.mas_equalTo(10);
-        make.centerX.equalTo(contentView);
+    
+    UIImageView* icon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bonus_rate_icon"]];
+    [bonus_container addSubview:icon];
+    [icon mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(17, 17));
+        make.centerY.equalTo(bonus_container);
+        make.right.equalTo(bonus_container);
+        make.left.equalTo(bonus_found_textfield.mas_right);
     }];
+    
     
     UILabel* remind_label = [UILabel new];
     remind_label.text = @"提醒:确认后不可更改或撤回,请确保输入无误";
@@ -165,7 +182,8 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     
     [remind_label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(contentView);
-        make.bottom.left.equalTo(contentView);
+        make.left.equalTo(contentView);
+        make.bottom.equalTo(contentView).offset(-8);
     }];
     
     
@@ -175,6 +193,15 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     [dialogViewController addSubmitButtonWithText:@"确定" block:^(QMUIDialogViewController *aDialogViewController) {
         [aDialogViewController hide];
     }];
+    
+    
+    dialogViewController.footerView.backgroundColor = [UIColor whiteColor];
+    NSDictionary *cancel_buttonTitleAttributes = @{NSForegroundColorAttributeName:[UIColor blackColor],NSFontAttributeName:[UIFont systemFontOfSize:18]};
+    NSDictionary *submit_buttonTitleAttributes = @{NSForegroundColorAttributeName:[UIColor qmui_colorWithHexString:@"#00CD6C"],NSFontAttributeName:[UIFont systemFontOfSize:18]};
+    dialogViewController.buttonTitleAttributes = submit_buttonTitleAttributes;
+    [dialogViewController.cancelButton setAttributedTitle:[[NSAttributedString alloc] initWithString:@"取消" attributes:cancel_buttonTitleAttributes] forState:UIControlStateNormal];
+
+    
     [dialogViewController show];
 }
 

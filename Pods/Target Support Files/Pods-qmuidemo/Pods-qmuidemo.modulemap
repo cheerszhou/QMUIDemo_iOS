@@ -1,0 +1,6 @@
+framework module Pods_qmuidemo {
+  umbrella header "Pods-qmuidemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
