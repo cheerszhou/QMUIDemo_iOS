@@ -7,6 +7,7 @@
 //
 
 #import "QDDialogViewController.h"
+#import <Masonry/Masonry.h>
 
 static NSString * const kSectionTitleForNormal = @"QMUIDialogViewController";
 static NSString * const kSectionTitleForSelection = @"QMUIDialogSelectionViewController";
@@ -130,10 +131,13 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     
     UILabel *bonus_found_label = [[UILabel alloc] qmui_initWithFont:UIFontMake(14) textColor:UIColorBlack];
     bonus_found_label.text = @"*分红总金额:";
-    bonus_found_label.font = [UIFont systemFontOfSize:11];
+    bonus_found_label.font = [UIFont systemFontOfSize:13];
     bonus_found_label.textColor = [UIColor qmui_colorWithHexString:@"#666666"];
     bonus_found_label.center = CGPointMake(CGRectGetWidth(contentView.bounds) / 2.0, CGRectGetHeight(contentView.bounds) / 2.0);
     [bonus_container addSubview:bonus_found_label];
+    [bonus_found_label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.left.top.equalTo(bonus_container);
+    }];
     
     QMUITextField* bonus_found_textfield = [[QMUITextField alloc]init];
     bonus_found_textfield.placeholder = @"50-50000";
@@ -141,7 +145,28 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     bonus_found_textfield.font = [UIFont systemFontOfSize:11];
     bonus_found_textfield.textColor = [UIColor qmui_colorWithHexString:@"#666666"];
     [bonus_container addSubview:bonus_found_textfield];
+    [bonus_found_textfield mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.top.right.equalTo(bonus_container);
+    }];
     
+    [bonus_container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(180);
+        make.height.mas_equalTo(20);
+        make.top.mas_equalTo(10);
+        make.centerX.equalTo(contentView);
+    }];
+    
+    UILabel* remind_label = [UILabel new];
+    remind_label.text = @"提醒:确认后不可更改或撤回,请确保输入无误";
+    remind_label.font = [UIFont systemFontOfSize:11];
+    remind_label.textColor = [UIColor qmui_colorWithHexString:@"#999999"];
+    remind_label.textAlignment = NSTextAlignmentCenter;
+    [contentView addSubview:remind_label];
+    
+    [remind_label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(contentView);
+        make.bottom.left.equalTo(contentView);
+    }];
     
     
     

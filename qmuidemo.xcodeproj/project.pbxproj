@@ -17,7 +17,10 @@
 		1679E32E1DFFC0AD0072B8A1 /* QDCustomToastAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1679E32D1DFFC0AD0072B8A1 /* QDCustomToastAnimator.m */; };
 		1679E3311DFFC4610072B8A1 /* QDCustomToastContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1679E3301DFFC4610072B8A1 /* QDCustomToastContentView.m */; };
 		16F42C121B1C60A70038B28F /* image0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F42C111B1C60A70038B28F /* image0@2x.png */; };
+		1BDC3EA33C94BAA56873F522 /* Pods_QMUIKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DF96201762CAEFB913589D /* Pods_QMUIKeyboard.framework */; };
+		342407BEB749C8306E363CFD /* Pods_qmuidemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FBF59B6357F9AD991051BA /* Pods_qmuidemo.framework */; };
 		4CD323992109B362007033C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD323972109B362007033C9 /* Localizable.strings */; };
+		6D9A2C0CA6C24CA9B9A6790D /* Pods_qmuidemo_QMUIDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6EB6B8D51F9F213E8B0ED2 /* Pods_qmuidemo_QMUIDemoUITests.framework */; };
 		8F732792262757E20051952C /* LookinServer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F732791262757E20051952C /* LookinServer.xcframework */; };
 		8F732793262757E20051952C /* LookinServer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F732791262757E20051952C /* LookinServer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD05B5E22743E1240001C5E0 /* QDAnimationCurvesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05B5E12743E1240001C5E0 /* QDAnimationCurvesViewController.m */; };
@@ -239,6 +242,9 @@
 		1679E32F1DFFC4610072B8A1 /* QDCustomToastContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCustomToastContentView.h; sourceTree = "<group>"; };
 		1679E3301DFFC4610072B8A1 /* QDCustomToastContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCustomToastContentView.m; sourceTree = "<group>"; };
 		16F42C111B1C60A70038B28F /* image0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image0@2x.png"; sourceTree = "<group>"; };
+		17A870FB92DE0F08CC9AE06A /* Pods-QMUIKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QMUIKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-QMUIKeyboard/Pods-QMUIKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		306012563341531CF2C85B98 /* Pods-qmuidemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qmuidemo.debug.xcconfig"; path = "Target Support Files/Pods-qmuidemo/Pods-qmuidemo.debug.xcconfig"; sourceTree = "<group>"; };
+		436FB61A324F8B40EE27C26B /* Pods-QMUIKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QMUIKeyboard.release.xcconfig"; path = "Target Support Files/Pods-QMUIKeyboard/Pods-QMUIKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		4CD323892109A55E007033C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4CD3238A2109A564007033C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		4CD3238C2109A7AE007033C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
@@ -247,7 +253,10 @@
 		4CD323982109B362007033C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CD3239A2109B364007033C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CD3239B2109B366007033C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		740FE0CE771F8562A5DB942B /* Pods-qmuidemo-QMUIDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qmuidemo-QMUIDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-qmuidemo-QMUIDemoUITests/Pods-qmuidemo-QMUIDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		78FBF59B6357F9AD991051BA /* Pods_qmuidemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qmuidemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F732791262757E20051952C /* LookinServer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LookinServer.xcframework; path = qmuidemo/Frameworks/LookinServer.xcframework; sourceTree = "<group>"; };
+		A9DF96201762CAEFB913589D /* Pods_QMUIKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QMUIKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD05B5E02743E1240001C5E0 /* QDAnimationCurvesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDAnimationCurvesViewController.h; sourceTree = "<group>"; };
 		CD05B5E12743E1240001C5E0 /* QDAnimationCurvesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDAnimationCurvesViewController.m; sourceTree = "<group>"; };
 		CD05C20A2750D70F0001C5E0 /* QDBlurEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDBlurEffectViewController.h; sourceTree = "<group>"; };
@@ -505,6 +514,9 @@
 		D0B1856722C5016F002578CD /* QMUIConfigurationTemplateDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateDark.h; sourceTree = "<group>"; };
 		D0BEFAA32484FEEB0006D1B9 /* QDInsetGroupedTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDInsetGroupedTableViewController.h; sourceTree = "<group>"; };
 		D0BEFAA42484FEEB0006D1B9 /* QDInsetGroupedTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDInsetGroupedTableViewController.m; sourceTree = "<group>"; };
+		DACFE23AF2EC1AA2C740A6B5 /* Pods-qmuidemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qmuidemo.release.xcconfig"; path = "Target Support Files/Pods-qmuidemo/Pods-qmuidemo.release.xcconfig"; sourceTree = "<group>"; };
+		DB6EB6B8D51F9F213E8B0ED2 /* Pods_qmuidemo_QMUIDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qmuidemo_QMUIDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E584477AE332B847F8A21C3A /* Pods-qmuidemo-QMUIDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qmuidemo-QMUIDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-qmuidemo-QMUIDemoUITests/Pods-qmuidemo-QMUIDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE5803311E949E1100159380 /* QDKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDKeyboardViewController.m; sourceTree = "<group>"; };
 		FE5803321E949E1100159380 /* QDKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDKeyboardViewController.h; sourceTree = "<group>"; };
 		FE775E3A1DF95728007A341F /* QDActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDActivityIndicator.m; sourceTree = "<group>"; };
@@ -525,6 +537,7 @@
 				CDE50ADB1DAA6EE5000D5414 /* SystemConfiguration.framework in Frameworks */,
 				CDE50AD91DAA6ED9000D5414 /* Security.framework in Frameworks */,
 				CDE50AD31DAA6E6F000D5414 /* libz.tbd in Frameworks */,
+				342407BEB749C8306E363CFD /* Pods_qmuidemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +545,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9A2C0CA6C24CA9B9A6790D /* Pods_qmuidemo_QMUIDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +553,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDC3EA33C94BAA56873F522 /* Pods_QMUIKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +568,7 @@
 				CDFD573A26DE132700603D1E /* QMUIKeyboard */,
 				165F42F11ADB60180057EF6A /* Products */,
 				CDE50AD11DAA6E6F000D5414 /* Frameworks */,
+				449CA0CD36B2ADDCD0F12176 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -622,6 +638,20 @@
 				CDD0D81E1E0A88B600A38B96 /* image6@2x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		449CA0CD36B2ADDCD0F12176 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17A870FB92DE0F08CC9AE06A /* Pods-QMUIKeyboard.debug.xcconfig */,
+				436FB61A324F8B40EE27C26B /* Pods-QMUIKeyboard.release.xcconfig */,
+				306012563341531CF2C85B98 /* Pods-qmuidemo.debug.xcconfig */,
+				DACFE23AF2EC1AA2C740A6B5 /* Pods-qmuidemo.release.xcconfig */,
+				740FE0CE771F8562A5DB942B /* Pods-qmuidemo-QMUIDemoUITests.debug.xcconfig */,
+				E584477AE332B847F8A21C3A /* Pods-qmuidemo-QMUIDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		CD0ADF662729394A002A1A54 /* QMUIDropdownNotification */ = {
@@ -989,6 +1019,9 @@
 				CDE50AD81DAA6ED9000D5414 /* Security.framework */,
 				CDE50AD41DAA6E9C000D5414 /* libstdc++.tbd */,
 				CDE50AD21DAA6E6F000D5414 /* libz.tbd */,
+				A9DF96201762CAEFB913589D /* Pods_QMUIKeyboard.framework */,
+				78FBF59B6357F9AD991051BA /* Pods_qmuidemo.framework */,
+				DB6EB6B8D51F9F213E8B0ED2 /* Pods_qmuidemo_QMUIDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1064,11 +1097,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 165F43131ADB60180057EF6A /* Build configuration list for PBXNativeTarget "qmuidemo" */;
 			buildPhases = (
+				41D284504072EBE91A9F32E3 /* [CP] Check Pods Manifest.lock */,
 				165F42EC1ADB60180057EF6A /* Sources */,
 				165F42ED1ADB60180057EF6A /* Frameworks */,
 				165F42EE1ADB60180057EF6A /* Resources */,
 				CDE85CB91F95E21500E622E8 /* Embed Frameworks */,
 				CDFD574226DE132800603D1E /* Embed App Extensions */,
+				8C406ADEC8FBAF4FAEB73732 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1085,9 +1120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD4EA5A2228D87B000A55066 /* Build configuration list for PBXNativeTarget "QMUIDemoUITests" */;
 			buildPhases = (
+				94B95D5B0A6BFD4631124CEE /* [CP] Check Pods Manifest.lock */,
 				CD4EA591228D87B000A55066 /* Sources */,
 				CD4EA592228D87B000A55066 /* Frameworks */,
 				CD4EA593228D87B000A55066 /* Resources */,
+				39B78BA263D7D2FB18AC35B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1103,6 +1140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDFD574726DE132800603D1E /* Build configuration list for PBXNativeTarget "QMUIKeyboard" */;
 			buildPhases = (
+				BC402D45FF0727AA953B4712 /* [CP] Check Pods Manifest.lock */,
 				CDFD573526DE132700603D1E /* Sources */,
 				CDFD573626DE132700603D1E /* Frameworks */,
 				CDFD573726DE132700603D1E /* Resources */,
@@ -1219,6 +1257,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39B78BA263D7D2FB18AC35B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qmuidemo-QMUIDemoUITests/Pods-qmuidemo-QMUIDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qmuidemo-QMUIDemoUITests/Pods-qmuidemo-QMUIDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qmuidemo-QMUIDemoUITests/Pods-qmuidemo-QMUIDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41D284504072EBE91A9F32E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qmuidemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C406ADEC8FBAF4FAEB73732 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qmuidemo/Pods-qmuidemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-qmuidemo/Pods-qmuidemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qmuidemo/Pods-qmuidemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94B95D5B0A6BFD4631124CEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qmuidemo-QMUIDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC402D45FF0727AA953B4712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QMUIKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		165F42EC1ADB60180057EF6A /* Sources */ = {
@@ -1529,6 +1670,7 @@
 		};
 		165F43141ADB60180057EF6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 306012563341531CF2C85B98 /* Pods-qmuidemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "QMUI (Debug)";
@@ -1574,6 +1716,7 @@
 		};
 		165F43151ADB60180057EF6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACFE23AF2EC1AA2C740A6B5 /* Pods-qmuidemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = QMUI;
@@ -1616,6 +1759,7 @@
 		};
 		CD4EA59C228D87B000A55066 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740FE0CE771F8562A5DB942B /* Pods-qmuidemo-QMUIDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1644,6 +1788,7 @@
 		};
 		CD4EA59D228D87B000A55066 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E584477AE332B847F8A21C3A /* Pods-qmuidemo-QMUIDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1671,6 +1816,7 @@
 		};
 		CDFD574326DE132800603D1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A870FB92DE0F08CC9AE06A /* Pods-QMUIKeyboard.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1706,6 +1852,7 @@
 		};
 		CDFD574426DE132800603D1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436FB61A324F8B40EE27C26B /* Pods-QMUIKeyboard.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
