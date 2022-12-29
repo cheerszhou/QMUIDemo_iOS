@@ -191,7 +191,17 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     dialogViewController.contentView = contentView;
     [dialogViewController addCancelButtonWithText:@"取消" block:nil];
     [dialogViewController addSubmitButtonWithText:@"确定" block:^(QMUIDialogViewController *aDialogViewController) {
-        [aDialogViewController hide];
+        UILabel* confirm_label  = [UILabel new];
+        confirm_label.font = [UIFont systemFontOfSize:18];
+        confirm_label.textColor = [UIColor qmui_colorWithHexString:@"#323232"];
+        confirm_label.text = @"  提醒:确认后不可更改或撤回, 请确保输入无误";
+        confirm_label.numberOfLines = 0;
+        confirm_label.textAlignment = NSTextAlignmentCenter;
+        confirm_label.frame = CGRectMake(0, 0, 300, 40);
+        
+        aDialogViewController.contentView = confirm_label;
+        [aDialogViewController show];
+
     }];
     
     
@@ -204,6 +214,7 @@ static NSString * const kSectionTitleForTextField = @"QMUIDialogTextFieldViewCon
     
     [dialogViewController show];
 }
+
 
 - (void)showAppearanceDialogViewController {
     QMUIDialogViewController *dialogViewController = [[QMUIDialogViewController alloc] init];
